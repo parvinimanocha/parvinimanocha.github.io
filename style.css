@@ -1294,3 +1294,31 @@ nav a:focus-visible {
     top: 24%;
   }
 }
+
+
+/* Use three bold circles only: yellow, coral red and dark forest green */
+.hero-image .profile-photo {
+  box-shadow: 9px 10px 0 #153C2C !important;
+}
+.hero-image::before {
+  background: #FEDC7B !important;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top: 8%;
+  right: -58px;
+  z-index: -2;
+}
+.hero-image::after {
+  background: #DF6149 !important;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  top: 22%;
+  left: -70px;
+  z-index: -3;
+}
+@media (max-width: 760px) {
+  .hero-image::before { width: 210px; height: 210px; right: -28px; }
+  .hero-image::after { width: 180px; height: 180px; left: -26px; }
+}
