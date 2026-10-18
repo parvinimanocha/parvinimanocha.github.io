@@ -2225,3 +2225,15 @@ main > .section > h2::before {
   color: #DF6149;
   text-shadow: none;
 }
+
+
+/* Keep sparkles only beside the coral-red section labels, not green headings */
+main > .section > h2::before {
+  content: none !important;
+}
+main > .section > .eyebrow::before {
+  content: "✦";
+  display: inline-block;
+  color: #DF6149;
+  margin-right: 8px;
+}
