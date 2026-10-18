@@ -2217,3 +2217,11 @@ main > .section > h2::before {
   margin-right: .45em;
   text-shadow: 1px 1px 0 #FEDC7B;
 }
+
+
+/* Match heading sparkles to the existing plain coral-red section sparkle */
+main > .section > h2::before {
+  content: "✦";
+  color: #DF6149;
+  text-shadow: none;
+}
