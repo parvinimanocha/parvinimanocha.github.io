@@ -1322,3 +1322,9 @@ nav a:focus-visible {
   .hero-image::before { width: 210px; height: 210px; right: -28px; }
   .hero-image::after { width: 180px; height: 180px; left: -26px; }
 }
+
+
+/* Restore the offset sage-green circular layer shown in the reference */
+.hero-image .profile-photo {
+  box-shadow: 9px 10px 0 #153C2C, -30px 28px 0 -1px #E3E9DC !important;
+}
