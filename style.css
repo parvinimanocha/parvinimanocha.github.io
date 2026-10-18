@@ -2449,3 +2449,62 @@ main .section.skills .skill-list > span .skill-icon {
     padding: 11px 15px !important;
   }
 }
+
+
+/* Certifications layout matched to the reference */
+#certifications h2 .cert-heading-accent { color: #708240; }
+#certifications .certification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+#certifications .certification-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 10px;
+  border: 0;
+  border-radius: 13px;
+  background: #E5EADD;
+  box-shadow: none;
+}
+#certifications .certification-card h3 {
+  margin: 0 0 4px;
+  color: #153C2C;
+  font-size: .82rem;
+  line-height: 1.25;
+}
+#certifications .certification-card p {
+  margin: 0;
+  color: #315342;
+  font-size: .72rem;
+  line-height: 1.2;
+}
+#certifications .cert-logo {
+  display: flex;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #708240;
+  color: #FFFBF0;
+  font-size: .62rem;
+  font-weight: 800;
+}
+#certifications .cert-logo-ms { background: #153C2C; }
+#certifications .cert-logo-ud { background: #DF6149; }
+#certifications .certification-featured {
+  grid-column: 1 / -1;
+  background: #FEDC7B;
+  border: 2px solid #153C2C;
+  border-radius: 13px;
+  padding: 10px;
+}
+#certifications .certification-featured h3 { font-size: .86rem; }
+@media (max-width: 600px) {
+  #certifications .certification-grid { grid-template-columns: 1fr; }
+  #certifications .certification-featured { grid-column: auto; }
+}
