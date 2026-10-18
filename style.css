@@ -2526,3 +2526,11 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications .certification-grid > .certification-card:nth-child(9) {
   box-shadow: 0 10px 0 #DF6149 !important;
 }
+
+
+/* User-marked shadow numbers 2, 5 and 9: top-middle, bottom-left, bottom-right cards */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(2),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
+  box-shadow: 0 10px 0 #DF6149 !important;
+}
