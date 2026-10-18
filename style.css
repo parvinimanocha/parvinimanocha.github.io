@@ -2518,3 +2518,11 @@ main .section.skills .skill-list > span .skill-icon {
   box-sizing: border-box !important;
   padding: 12px 10px !important;
 }
+
+
+/* Red bottom shadows only for certification cards numbered 2, 5 and 9 */
+#certifications .certification-grid > .certification-card:nth-child(2),
+#certifications .certification-grid > .certification-card:nth-child(5),
+#certifications .certification-grid > .certification-card:nth-child(9) {
+  box-shadow: 0 10px 0 #DF6149 !important;
+}
