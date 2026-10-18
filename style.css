@@ -1328,3 +1328,40 @@ nav a:focus-visible {
 .hero-image .profile-photo {
   box-shadow: 9px 10px 0 #153C2C, -30px 28px 0 -1px #E3E9DC !important;
 }
+
+
+/* Three decorative circles positioned where the red 1, 2, 3 marks were */
+.hero-image {
+  isolation: isolate;
+}
+.hero-image .profile-photo {
+  box-shadow: 9px 10px 0 #153C2C !important;
+}
+.hero-image::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #FEDC7B;
+  top: 3%;
+  left: 2%;
+  pointer-events: none;
+}
+.hero-image::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #DF6149;
+  top: 37%;
+  right: -4%;
+  pointer-events: none;
+}
+@media (max-width: 760px) {
+  .hero-image::before { width: 62px; height: 62px; left: 2%; top: 3%; }
+  .hero-image::after { width: 54px; height: 54px; right: -2%; top: 37%; }
+}
