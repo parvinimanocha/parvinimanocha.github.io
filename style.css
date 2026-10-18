@@ -1130,34 +1130,4 @@ nav a:focus-visible {
   position: relative;
   z-index: 1;
 }
-/* Small playful corner decorations */
-.hero::before {
-  content: "✦";
-  position: absolute;
-  top: 34px;
-  left: 3.5%;
-  color: #DF6149;
-  font-size: 30px;
-  line-height: 1;
-  opacity: .85;
-  transform: rotate(-12deg);
-  pointer-events: none;
-}
-.hero::after {
-  content: "☁️";
-  position: absolute;
-  right: 3.5%;
-  bottom: 28px;
-  font-size: 32px;
-  line-height: 1;
-  opacity: .8;
-  pointer-events: none;
-}
-@media (max-width: 760px) {
-  .hero {
-    padding-top: 20px !important;
-    padding-bottom: 36px !important;
-  }
-  .hero::before { top: 12px; left: 5%; font-size: 24px; }
-  .hero::after { right: 5%; bottom: 10px; font-size: 26px; }
-}
+
