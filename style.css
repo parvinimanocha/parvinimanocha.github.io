@@ -1203,3 +1203,45 @@ nav a:focus-visible {
   .badge-seo { left: -10px; }
   .badge-ppo { right: -8px; }
 }
+
+
+/* Match the reference hero layout while keeping the decorative numbered dots out */
+.hero .explore-button {
+  border: 0 !important;
+  box-shadow: 0 5px 0 #DF6149 !important;
+  border-radius: 28px !important;
+}
+.hero .hello-button {
+  border-radius: 28px !important;
+}
+.hero-stats .stat-card:first-child {
+  background: #FEDC7B !important;
+  border-color: #FEDC7B !important;
+}
+.hero-stats .stat-card:nth-child(2),
+.hero-stats .stat-card:nth-child(3) {
+  background: #E3E9DC !important;
+  border-color: #E3E9DC !important;
+}
+.hero-image::before,
+.hero-image::after,
+.hero-stats .stat-card::before {
+  content: none !important;
+  display: none !important;
+}
+.photo-badge {
+  border: 3px solid #153C2C !important;
+  border-radius: 28px !important;
+  padding: 10px 14px !important;
+  box-shadow: 4px 5px 0 #153C2C !important;
+  font-size: .9rem !important;
+}
+.badge-powerbi { top: 14%; left: -58px; }
+.badge-seo { bottom: 13%; left: -42px; }
+.badge-ppo { right: -42px; bottom: 24%; }
+@media (max-width: 760px) {
+  .photo-badge { font-size: .72rem !important; padding: 7px 10px !important; }
+  .badge-powerbi { left: -12px; }
+  .badge-seo { left: -12px; }
+  .badge-ppo { right: -12px; }
+}
