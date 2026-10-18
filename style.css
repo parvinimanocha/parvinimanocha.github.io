@@ -2623,3 +2623,15 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
   box-shadow: 0 10px 0 #153C2C !important;
 }
+
+
+/* Latest requested logo badge colors */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(7) .cert-logo {
+  background: #153C2C !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) .cert-logo {
+  background: #E5EADD !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(9) .cert-logo {
+  background: #153C2C !important;
+}
