@@ -2533,3 +2533,40 @@ main .section.skills .skill-list > span .skill-icon {
   background: #FEDC7B !important;
   box-shadow: none !important;
 }
+
+
+/* Certification cards: two-column grid, alternating colours by card */
+#certifications .certification-grid > .certification-card {
+  grid-column: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  background: #E5EADD !important;
+  border: 0 !important;
+  border-radius: 13px !important;
+  box-shadow: none !important;
+  padding: 12px 10px !important;
+}
+#certifications .certification-grid > .certification-card:nth-child(4n + 1),
+#certifications .certification-grid > .certification-card:nth-child(4n + 2) {
+  background: #E5EADD !important;
+}
+#certifications .certification-grid > .certification-card:nth-child(4n + 3),
+#certifications .certification-grid > .certification-card:nth-child(4n + 4) {
+  background: #FEDC7B !important;
+}
+#certifications .certification-grid > .certification-featured {
+  grid-column: auto !important;
+  background: #E5EADD !important;
+  border: 0 !important;
+  width: 100% !important;
+  padding: 12px 10px !important;
+  box-sizing: border-box !important;
+}
+#certifications .certification-grid > .certification-card .cert-logo {
+  flex: 0 0 30px !important;
+}
+@media (max-width: 600px) {
+  #certifications .certification-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #certifications .certification-grid > .certification-card { padding: 12px 10px !important; }
+}
