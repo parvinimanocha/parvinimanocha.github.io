@@ -2237,3 +2237,9 @@ main > .section > .eyebrow::before {
   color: #DF6149;
   margin-right: 8px;
 }
+
+
+/* Keep the Let's Connect sparkle coral red like the other section labels */
+.contact .eyebrow::before {
+  color: #DF6149 !important;
+}
