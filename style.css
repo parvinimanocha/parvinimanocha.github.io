@@ -2550,3 +2550,13 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(7) {
   box-shadow: 0 10px 0 #FEDC7B !important;
 }
+
+
+/* Requested certification bottom-shadow colours: 3 and 6 dark green; 8 light green */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(3),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) {
+  box-shadow: 0 10px 0 #153C2C !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) {
+  box-shadow: 0 10px 0 #E5EADD !important;
+}
