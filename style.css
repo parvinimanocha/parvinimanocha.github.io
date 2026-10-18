@@ -2199,3 +2199,9 @@ footer {
   main > .section .project-card,
   main > .section .skill-list span { transition: none !important; }
 }
+
+
+/* Make both Let's Connect buttons use the coral-red border */
+main > .section.contact .contact-buttons .button {
+  border: 1.5px solid #DF6149 !important;
+}
