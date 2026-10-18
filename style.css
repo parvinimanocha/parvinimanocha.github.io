@@ -2589,3 +2589,20 @@ main .section.skills .skill-list > span .skill-icon {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+
+/* Restore three certification cards per row while keeping all cards uniform */
+#certifications .certification-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+@media (max-width: 900px) {
+  #certifications .certification-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 600px) {
+  #certifications .certification-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
