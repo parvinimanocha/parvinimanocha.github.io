@@ -2635,3 +2635,28 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(9) .cert-logo {
   background: #153C2C !important;
 }
+
+
+/* Final user-requested certification badge and shadow colors.
+   Light green matches the Data Visualization and Dashboards logo badge (#708240). */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4) .cert-logo {
+  background: #708240 !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) .cert-logo {
+  background: #153C2C !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) {
+  box-shadow: 0 10px 0 #E5EADD !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) .cert-logo {
+  background: #708240 !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) .cert-logo {
+  background: #708240 !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(10) .cert-logo {
+  background: #708240 !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(10) {
+  box-shadow: 0 10px 0 #153C2C !important;
+}
