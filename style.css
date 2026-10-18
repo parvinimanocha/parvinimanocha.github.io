@@ -2628,3 +2628,67 @@ main .section.skills .skill-list > span .skill-icon {
   font-size: .72rem !important;
   line-height: 1.2 !important;
 }
+
+
+/* Final certification layout: match the original screenshot (3 equal cards per row) */
+#certifications .project-grid.certification-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+#certifications .project-grid.certification-grid > .certification-card,
+#certifications .project-grid.certification-grid > .certification-featured {
+  grid-column: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 193px !important;
+  height: 193px !important;
+  box-sizing: border-box !important;
+  padding: 24px 26px !important;
+  border-radius: 22px !important;
+  border: 2px solid #E5EADD !important;
+  background: #FFFBF0 !important;
+  box-shadow: 0 10px 0 rgba(21, 60, 44, 0.08) !important;
+}
+#certifications .project-grid.certification-grid > .certification-featured {
+  background: #FEDC7B !important;
+  border-color: #FEDC7B !important;
+  box-shadow: none !important;
+}
+#certifications .project-grid.certification-grid > .certification-card h3,
+#certifications .project-grid.certification-grid > .certification-featured h3 {
+  font-size: 1.12rem !important;
+  line-height: 1.25 !important;
+  margin: 0 0 8px !important;
+}
+#certifications .project-grid.certification-grid > .certification-card p,
+#certifications .project-grid.certification-grid > .certification-featured p {
+  font-size: .9rem !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+}
+#certifications .project-grid.certification-grid .cert-logo {
+  flex: 0 0 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+}
+@media (max-width: 900px) {
+  #certifications .project-grid.certification-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+}
+@media (max-width: 600px) {
+  #certifications .project-grid.certification-grid {
+    grid-template-columns: 1fr !important;
+  }
+  #certifications .project-grid.certification-grid > .certification-card,
+  #certifications .project-grid.certification-grid > .certification-featured {
+    height: auto !important;
+    min-height: 120px !important;
+  }
+}
