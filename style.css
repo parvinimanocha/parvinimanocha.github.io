@@ -1091,3 +1091,28 @@ nav a:focus-visible {
     height: 360px;
   }
 }
+
+
+/* Main portfolio hero: yellow CTA, larger portrait, and cleaner text spacing */
+.hero .button:first-of-type {
+  background: #FEDC7B !important;
+  border-color: #FEDC7B !important;
+  color: #153c2c !important;
+}
+.hero-image {
+  width: min(390px, 34vw) !important;
+  min-width: 300px;
+  flex: 0 0 auto;
+}
+.profile-photo {
+  height: min(560px, 68vh) !important;
+}
+@media (max-width: 760px) {
+  .hero-image {
+    width: min(350px, 82vw) !important;
+    min-width: 0;
+  }
+  .profile-photo {
+    height: 390px !important;
+  }
+}
