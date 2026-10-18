@@ -2518,31 +2518,3 @@ main .section.skills .skill-list > span .skill-icon {
   box-sizing: border-box !important;
   padding: 12px 10px !important;
 }
-
-
-/* Certification cards: distinct two-colour combinations, with the same soft grey bottom shadow */
-#certifications .certification-grid > .certification-card {
-  border: 2px solid transparent !important;
-  box-shadow: 0 10px 0 rgba(75, 75, 60, 0.12) !important;
-}
-#certifications .certification-grid > .certification-card:nth-child(1) { background: #FEDC7B !important; border-color: #FEDC7B !important; }
-#certifications .certification-grid > .certification-card:nth-child(1) .cert-logo { background: #153C2C !important; }
-#certifications .certification-grid > .certification-card:nth-child(2) { background: #E5EADD !important; border-color: #E5EADD !important; }
-#certifications .certification-grid > .certification-card:nth-child(2) .cert-logo { background: #708240 !important; }
-#certifications .certification-grid > .certification-card:nth-child(3) { background: #DCE8E7 !important; border-color: #DCE8E7 !important; }
-#certifications .certification-grid > .certification-card:nth-child(3) .cert-logo { background: #153C2C !important; }
-#certifications .certification-grid > .certification-card:nth-child(4) { background: #F4DCD2 !important; border-color: #F4DCD2 !important; }
-#certifications .certification-grid > .certification-card:nth-child(4) .cert-logo { background: #DF6149 !important; }
-#certifications .certification-grid > .certification-card:nth-child(5) { background: #E5EADD !important; border-color: #E5EADD !important; }
-#certifications .certification-grid > .certification-card:nth-child(5) .cert-logo { background: #DF6149 !important; }
-#certifications .certification-grid > .certification-card:nth-child(6) { background: #DCE8E7 !important; border-color: #DCE8E7 !important; }
-#certifications .certification-grid > .certification-card:nth-child(6) .cert-logo { background: #708240 !important; }
-#certifications .certification-grid > .certification-card:nth-child(7) { background: #FEDC7B !important; border-color: #FEDC7B !important; }
-#certifications .certification-grid > .certification-card:nth-child(7) .cert-logo { background: #DF6149 !important; }
-#certifications .certification-grid > .certification-card:nth-child(8) { background: #F4DCD2 !important; border-color: #F4DCD2 !important; }
-#certifications .certification-grid > .certification-card:nth-child(8) .cert-logo { background: #708240 !important; }
-#certifications .certification-grid > .certification-card:nth-child(9) { background: #E5EADD !important; border-color: #E5EADD !important; }
-#certifications .certification-grid > .certification-card:nth-child(9) .cert-logo { background: #153C2C !important; }
-#certifications .certification-grid > .certification-card:nth-child(10) { background: #DCE8E7 !important; border-color: #DCE8E7 !important; }
-#certifications .certification-grid > .certification-card:nth-child(10) .cert-logo { background: #DF6149 !important; }
-#certifications .certification-grid > .certification-card .cert-logo { color: #FFFBF0 !important; }
