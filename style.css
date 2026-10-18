@@ -1936,3 +1936,32 @@ nav a { font-size: .68rem !important; padding: 6px 10px !important; }
     border-radius: 140px 140px 24px 24px !important;
   }
 }
+
+
+/* Small decorative sparkles around the portrait */
+.hero-image::before,
+.hero-image::after {
+  content: "✦";
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  line-height: 1;
+  text-shadow: 0 0 1px rgba(255,251,240,.5);
+}
+.hero-image::before {
+  content: "✦";
+  top: -8%;
+  right: 3%;
+  color: #DF6149;
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+}
+.hero-image::after {
+  content: "✧";
+  top: 3%;
+  left: -11%;
+  color: #708240;
+  font-size: clamp(1rem, 1.6vw, 1.45rem);
+}
+@media (min-width: 701px) {
+  .hero-image { overflow: visible !important; }
+}
