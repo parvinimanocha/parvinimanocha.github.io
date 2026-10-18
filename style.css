@@ -1870,3 +1870,52 @@ nav a { font-size: .68rem !important; padding: 6px 10px !important; }
   .hero-image { width: min(270px, 78vw) !important; flex-basis: auto !important; }
   .hero-image .profile-photo { height: 285px !important; }
 }
+
+
+/* Balanced larger desktop hero: fill one screen without crowding or clipping */
+@media (min-width: 701px) {
+  .navbar { padding: 16px 6.3% !important; }
+  .navbar .logo { font-size: 1.7rem !important; }
+  nav a { font-size: .88rem !important; padding: 9px 13px !important; }
+  .hero {
+    min-height: calc(100vh - 76px) !important;
+    box-sizing: border-box !important;
+    padding: 42px 6.3% 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: clamp(36px, 5.5vw, 92px) !important;
+    overflow: hidden !important;
+  }
+  .hero-text { flex: 1 1 56% !important; max-width: 56% !important; }
+  .hero .eyebrow { font-size: .82rem !important; letter-spacing: 2px !important; margin-bottom: 14px !important; }
+  .hero h1 { font-size: clamp(3rem, 4.2vw, 4.7rem) !important; line-height: 1.02 !important; margin-bottom: 20px !important; }
+  .hero .hero-greeting { font-size: 1em !important; }
+  .hero .hero-name { font-size: 1.08em !important; }
+  .hero .tagline { font-size: clamp(1.25rem, 1.65vw, 1.75rem) !important; line-height: 1.35 !important; margin-bottom: 16px !important; }
+  .hero .intro { font-size: clamp(.95rem, 1.1vw, 1.12rem) !important; line-height: 1.7 !important; margin-bottom: 24px !important; max-width: 720px !important; }
+  .hero .hero-actions { gap: 14px !important; }
+  .hero .hero-actions .button { font-size: 1rem !important; padding: 15px 24px !important; }
+  .hero .hero-stats { gap: 12px !important; margin-top: 26px !important; }
+  .hero .stat-card,
+  .hero .stat-card:first-child,
+  .hero .stat-card:nth-child(2),
+  .hero .stat-card:nth-child(3) { padding: 15px 18px !important; border-radius: 15px !important; }
+  .hero .stat-card strong { font-size: 1.45rem !important; }
+  .hero .stat-card span { font-size: .84rem !important; }
+  .hero-image { flex: 0 0 clamp(300px, 29vw, 390px) !important; width: clamp(300px, 29vw, 390px) !important; }
+  .hero-image .profile-photo { height: clamp(350px, 48vh, 450px) !important; border-width: 6px !important; }
+  .hero-image .photo-badge { font-size: .82rem !important; padding: 8px 13px !important; }
+  .hero-image .badge-powerbi { left: -48px !important; }
+  .hero-image .badge-seo { left: -38px !important; }
+  .hero-image .badge-ppo { right: -30px !important; }
+}
+@media (max-width: 700px) {
+  .navbar .logo { font-size: 1.45rem !important; }
+  .hero h1 { font-size: clamp(2.25rem, 9vw, 3rem) !important; }
+  .hero .eyebrow { font-size: .7rem !important; }
+  .hero .tagline { font-size: 1.15rem !important; }
+  .hero .intro { font-size: .92rem !important; }
+  .hero .hero-actions .button { font-size: .9rem !important; padding: 12px 17px !important; }
+  .hero .stat-card strong { font-size: 1.2rem !important; }
+  .hero .stat-card span { font-size: .75rem !important; }
+}
