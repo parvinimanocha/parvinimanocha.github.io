@@ -2535,3 +2535,10 @@ main .section.skills .skill-list > span .skill-icon {
 }
 
 
+
+
+/* Remove the remaining yellow highlight from the Microsoft certification */
+#certifications .certification-grid > .certification-featured {
+  background: #E5EADD !important;
+  border-color: transparent !important;
+}
