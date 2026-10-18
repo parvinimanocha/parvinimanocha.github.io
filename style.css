@@ -1063,3 +1063,17 @@ nav a:focus-visible {
 .contact .eyebrow::before {
   color: #FEDC7B !important;
 }
+
+
+/* Make the primary Explore button yellow and enlarge/shift the hero portrait left */
+.home-actions .button:first-child {
+  background: #FEDC7B !important;
+  border-color: #FEDC7B !important;
+  color: #153c2c !important;
+}
+.home-photo { width: min(410px, 38vw); max-width: 100%; }
+.home-photo-wrap { transform: translate(-22px, -10px); }
+@media (max-width: 700px) {
+  .home-photo { width: min(350px, 84vw); }
+  .home-photo-wrap { transform: translateY(-6px); }
+}
