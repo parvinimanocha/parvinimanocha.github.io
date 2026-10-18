@@ -2660,3 +2660,9 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(10) {
   box-shadow: 0 10px 0 #153C2C !important;
 }
+
+
+/* Introduction to Data Analytics: match shadow to the light-green logo badge color */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) {
+  box-shadow: 0 10px 0 #708240 !important;
+}
