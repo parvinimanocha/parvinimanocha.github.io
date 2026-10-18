@@ -2243,3 +2243,15 @@ main > .section > .eyebrow::before {
 .contact .eyebrow::before {
   color: #DF6149 !important;
 }
+
+
+/* Skill stickers: coral-red background with dark-green text */
+main > .section.skills .skill-list span {
+  background: #DF6149 !important;
+  color: #153C2C !important;
+  border: 1px solid #DF6149 !important;
+}
+main > .section.skills .skill-list span:hover {
+  background: #F49069 !important;
+  color: #153C2C !important;
+}
