@@ -1443,3 +1443,41 @@ nav a:focus-visible {
   .hero-stats .stat-card strong { font-size: 1.2rem !important; }
   .hero-stats .stat-card span { font-size: .75rem !important; }
 }
+
+
+/* Make the coloured circles taller/larger and layer the main green circle behind the portrait */
+.hero-image { position: relative !important; isolation: isolate !important; }
+.hero-image .hero-circle {
+  border-radius: 50% !important;
+  z-index: -1 !important;
+}
+.hero-image .circle-lightgreen {
+  width: 150px !important;
+  height: 150px !important;
+  left: -35px !important;
+  bottom: -26px !important;
+}
+.hero-image .circle-yellow {
+  width: 170px !important;
+  height: 170px !important;
+  top: -42px !important;
+  left: 0 !important;
+}
+/* Largest circle: forest green, mostly visible behind the picture */
+.hero-image .circle-coral {
+  width: 250px !important;
+  height: 250px !important;
+  background: #153C2C !important;
+  top: 34% !important;
+  right: -54px !important;
+  z-index: -2 !important;
+}
+.hero-image .profile-photo {
+  position: relative !important;
+  z-index: 0 !important;
+}
+@media (max-width: 760px) {
+  .hero-image .circle-lightgreen { width: 95px !important; height: 95px !important; left: -15px !important; bottom: -16px !important; }
+  .hero-image .circle-yellow { width: 110px !important; height: 110px !important; top: -20px !important; left: 0 !important; }
+  .hero-image .circle-coral { width: 160px !important; height: 160px !important; right: -24px !important; top: 34% !important; }
+}
