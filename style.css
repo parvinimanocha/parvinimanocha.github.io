@@ -1612,3 +1612,55 @@ nav a:focus-visible {
     top: 36% !important;
   }
 }
+
+
+/* Final annotated-reference adjustments: move items 1–6 slightly down and reduce their scale */
+.hero .hero-actions { margin-top: 24px !important; }
+.hero .hero-stats { margin-top: 24px !important; }
+.hero .hero-greeting,
+.hero .hero-name,
+.hero .tagline,
+.hero .intro { transform: translateY(3px); }
+.hero .tagline { font-size: clamp(1.15rem, 1.65vw, 1.48rem) !important; }
+.hero .intro { font-size: .94rem !important; line-height: 1.65 !important; }
+.hero .hero-actions .button { font-size: .92rem !important; padding: 14px 23px !important; }
+.hero .stat-card strong { font-size: 1.22rem !important; }
+.hero .stat-card span { font-size: .78rem !important; }
+/* Email glyph red, while the button text remains forest green */
+.hero .hello-button { color: #153C2C !important; }
+.hero .hello-button .mail-icon,
+.hero .hello-button svg { color: #DF6149 !important; }
+@media (max-width: 760px) {
+  .hero .hero-actions .button { font-size: .88rem !important; padding: 11px 16px !important; }
+  .hero .stat-card strong { font-size: 1.12rem !important; }
+  .hero .stat-card span { font-size: .72rem !important; }
+}
+/* Circle 7: increase yellow circle. Circle 8: coral circle becomes dark green and larger/lower */
+.hero-image .circle-yellow {
+  width: 255px !important;
+  height: 255px !important;
+  top: -48px !important;
+  left: -4px !important;
+  background: #FEDC7B !important;
+}
+.hero-image .circle-coral {
+  width: 320px !important;
+  height: 320px !important;
+  right: -56px !important;
+  top: 40% !important;
+  background: #153C2C !important;
+  z-index: -2 !important;
+}
+.hero-image .circle-lightgreen {
+  width: 190px !important;
+  height: 190px !important;
+  left: -46px !important;
+  bottom: -36px !important;
+  background: #153C2C !important;
+  z-index: -2 !important;
+}
+@media (max-width: 760px) {
+  .hero-image .circle-yellow { width: 145px !important; height: 145px !important; top: -22px !important; left: 0 !important; }
+  .hero-image .circle-coral { width: 180px !important; height: 180px !important; right: -24px !important; top: 40% !important; }
+  .hero-image .circle-lightgreen { width: 110px !important; height: 110px !important; left: -18px !important; bottom: -18px !important; }
+}
