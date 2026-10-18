@@ -2508,3 +2508,13 @@ main .section.skills .skill-list > span .skill-icon {
   #certifications .certification-grid { grid-template-columns: 1fr; }
   #certifications .certification-featured { grid-column: auto; }
 }
+
+
+/* Only make the Microsoft certificate occupy one regular card cell */
+#certifications .certification-grid > .certification-featured {
+  grid-column: auto !important;
+  min-height: 0 !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+  padding: 12px 10px !important;
+}
