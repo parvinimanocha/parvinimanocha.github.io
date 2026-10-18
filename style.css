@@ -1547,3 +1547,68 @@ nav a:focus-visible {
     top: 38% !important;
   }
 }
+
+
+/* Latest hero refinements requested */
+.hero .hero-greeting,
+.hero .hero-name,
+.hero .tagline,
+.hero .intro,
+.hero .eyebrow,
+.hero .hero-actions .button,
+.hero .stat-card strong,
+.hero .stat-card span {
+  /* keep the current slightly smaller typography */
+}
+.hero .hero-greeting { margin-bottom: 0 !important; }
+.hero .hello-button { color: #153C2C !important; }
+.hero .hello-button::first-letter { color: #DF6149 !important; }
+/* Make the yellow accent circle larger */
+.hero-image .circle-yellow {
+  width: 230px !important;
+  height: 230px !important;
+  top: -48px !important;
+  left: -4px !important;
+  background: #FEDC7B !important;
+}
+/* The other two circles become dark forest green, with the main one large and lower behind the portrait */
+.hero-image .circle-lightgreen {
+  width: 190px !important;
+  height: 190px !important;
+  left: -46px !important;
+  bottom: -36px !important;
+  background: #153C2C !important;
+  z-index: -2 !important;
+}
+.hero-image .circle-coral {
+  width: 300px !important;
+  height: 300px !important;
+  right: -58px !important;
+  top: 36% !important;
+  background: #153C2C !important;
+  z-index: -2 !important;
+}
+.hero-image .profile-photo {
+  position: relative !important;
+  z-index: 0 !important;
+}
+@media (max-width: 760px) {
+  .hero-image .circle-yellow {
+    width: 135px !important;
+    height: 135px !important;
+    top: -22px !important;
+    left: 0 !important;
+  }
+  .hero-image .circle-lightgreen {
+    width: 110px !important;
+    height: 110px !important;
+    left: -18px !important;
+    bottom: -18px !important;
+  }
+  .hero-image .circle-coral {
+    width: 175px !important;
+    height: 175px !important;
+    right: -24px !important;
+    top: 36% !important;
+  }
+}
