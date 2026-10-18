@@ -2569,3 +2569,9 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(3) .cert-logo {
   background: #153C2C !important;
 }
+
+
+/* Excel Basics for Data Analysis: dark-green bottom shadow */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4) {
+  box-shadow: 0 10px 0 #153C2C !important;
+}
