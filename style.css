@@ -2045,3 +2045,157 @@ main > .section .project-category {
   main > .section > h2 { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
   main > .section .project-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; }
 }
+
+
+/* Creative editorial styling carried from the first page into every content section */
+main > .section {
+  position: relative !important;
+  isolation: isolate;
+}
+main > .section:nth-of-type(even)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 190px;
+  height: 190px;
+  right: 3%;
+  top: 42px;
+  border-radius: 50%;
+  background: #FEDC7B;
+  opacity: .38;
+}
+main > .section:nth-of-type(odd)::before {
+  content: "✦";
+  position: absolute;
+  z-index: -1;
+  top: 48px;
+  right: 7%;
+  color: #DF6149;
+  font-size: 2rem;
+}
+main > .section > .eyebrow {
+  color: #DF6149 !important;
+  letter-spacing: 2.5px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+main > .section > h2 {
+  color: #153C2C !important;
+  max-width: 900px !important;
+}
+main > .section > h2::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 5px;
+  margin-top: 17px;
+  border-radius: 8px;
+  background: #FEDC7B;
+}
+main > .section > p:not(.eyebrow) {
+  color: #40584a !important;
+}
+main > .section .info-card,
+main > .section .project-card {
+  background: rgba(255,251,240,.94) !important;
+  border: 1.5px solid #E3E9DC !important;
+  border-radius: 22px !important;
+  box-shadow: 0 8px 0 rgba(21,60,44,.07) !important;
+  padding: clamp(20px, 2.4vw, 30px) !important;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+main > .section .info-card:hover,
+main > .section .project-card:hover {
+  transform: translateY(-5px);
+  border-color: #FEDC7B !important;
+  box-shadow: 0 12px 0 rgba(21,60,44,.09) !important;
+}
+main > .section .info-card h3,
+main > .section .project-card h3 {
+  color: #153C2C !important;
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem) !important;
+}
+main > .section .project-card > span {
+  display: inline-block;
+  color: #DF6149 !important;
+  letter-spacing: 1.1px;
+  font-size: .72rem !important;
+  margin-bottom: 5px;
+}
+main > .section .project-card p,
+main > .section .info-card p {
+  color: #40584a !important;
+  line-height: 1.75 !important;
+}
+main > .section .project-card {
+  border-bottom: 5px solid #153C2C !important;
+  overflow: hidden !important;
+}
+main > .section .project-image {
+  border-radius: 15px !important;
+  background: #E3E9DC !important;
+  margin-bottom: 20px !important;
+}
+main > .section .project-link,
+main > .section > .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 24px;
+  background: #FEDC7B;
+  color: #153C2C !important;
+  font-weight: 750;
+  text-decoration: none;
+}
+main > .section .skill-list span {
+  background: #E3E9DC !important;
+  color: #153C2C !important;
+  border: 1px solid #D5DECE;
+  padding: 12px 19px !important;
+  font-weight: 650;
+  transition: transform .2s ease, background .2s ease;
+}
+main > .section .skill-list span:hover {
+  background: #FEDC7B !important;
+  transform: translateY(-3px);
+}
+main > .section.contact {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--content-max)) !important;
+  margin: 35px auto 70px !important;
+  padding: clamp(34px, 5vw, 70px) !important;
+  border: 2px solid #E3E9DC !important;
+  border-radius: 30px !important;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(254,220,123,.38), transparent 26%),
+    #E3E9DC !important;
+  box-shadow: 0 9px 0 #153C2C !important;
+}
+main > .section.contact::before { display: none; }
+main > .section.contact .contact-buttons {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 14px !important;
+}
+main > .section.contact .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FEDC7B !important;
+  color: #153C2C !important;
+  border: 1.5px solid #153C2C !important;
+  border-radius: 28px !important;
+  padding: 13px 21px !important;
+  box-shadow: 0 4px 0 #153C2C !important;
+}
+footer {
+  color: #153C2C !important;
+  border-top: 1px solid #E3E9DC;
+  background: #FFFBF0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  main > .section .info-card,
+  main > .section .project-card,
+  main > .section .skill-list span { transition: none !important; }
+}
