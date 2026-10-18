@@ -2560,3 +2560,12 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) {
   box-shadow: 0 10px 0 #E5EADD !important;
 }
+
+
+/* Database & SQL certification: yellow bottom shadow, dark-green IBM badge */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(3) {
+  box-shadow: 0 10px 0 #FEDC7B !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(3) .cert-logo {
+  background: #153C2C !important;
+}
