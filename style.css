@@ -2534,3 +2534,11 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
   box-shadow: 0 10px 0 #DF6149 !important;
 }
+
+
+/* Precisely colour the bottom shadow for the cards marked 2, 5 and 9 in the user's screenshot */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(2),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
+  box-shadow: 0 10px 0 #DF6149 !important;
+}
