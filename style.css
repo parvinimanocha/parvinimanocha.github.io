@@ -1403,3 +1403,43 @@ nav a:focus-visible {
   .hero-image .circle-yellow { width: 58px !important; height: 58px !important; top: -12px !important; left: 8px !important; }
   .hero-image .circle-coral { width: 50px !important; height: 50px !important; right: -12px !important; top: 38% !important; }
 }
+
+
+/* Make all three hero stat cards larger and use one consistent palette */
+.hero-stats {
+  gap: 12px !important;
+  margin-top: 28px !important;
+}
+.hero-stats .stat-card,
+.hero-stats .stat-card:first-child,
+.hero-stats .stat-card:nth-child(2),
+.hero-stats .stat-card:nth-child(3) {
+  min-width: 118px !important;
+  padding: 16px 18px !important;
+  background: #E3E9DC !important;
+  border: 1px solid #E3E9DC !important;
+  border-radius: 16px !important;
+  color: #153C2C !important;
+}
+.hero-stats .stat-card strong {
+  font-size: 1.45rem !important;
+  line-height: 1.2 !important;
+  color: #153C2C !important;
+}
+.hero-stats .stat-card span {
+  font-size: .88rem !important;
+  margin-top: 7px !important;
+  color: #52663B !important;
+}
+@media (max-width: 760px) {
+  .hero-stats { gap: 8px !important; margin-top: 20px !important; }
+  .hero-stats .stat-card,
+  .hero-stats .stat-card:first-child,
+  .hero-stats .stat-card:nth-child(2),
+  .hero-stats .stat-card:nth-child(3) {
+    min-width: 0 !important;
+    padding: 12px !important;
+  }
+  .hero-stats .stat-card strong { font-size: 1.2rem !important; }
+  .hero-stats .stat-card span { font-size: .75rem !important; }
+}
