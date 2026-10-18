@@ -2542,3 +2542,11 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
   box-shadow: 0 10px 0 #DF6149 !important;
 }
+
+
+/* Yellow bottom shadows for certification cards 1, 4 and 7 */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(1),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(3),
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(7) {
+  box-shadow: 0 10px 0 #FEDC7B !important;
+}
