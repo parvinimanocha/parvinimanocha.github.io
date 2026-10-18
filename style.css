@@ -2509,3 +2509,13 @@ main .section.skills .skill-list > span .skill-icon {
   #certifications .certification-featured { grid-column: auto; }
 }
 
+
+
+/* Microsoft certification should use the same card size as the others */
+#certifications .certification-featured {
+  grid-column: auto !important;
+  min-height: 0 !important;
+  padding: 12px 10px !important;
+  border: 0 !important;
+  border-radius: 13px !important;
+}
