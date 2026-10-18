@@ -2519,3 +2519,17 @@ main .section.skills .skill-list > span .skill-icon {
   border: 0 !important;
   border-radius: 13px !important;
 }
+
+
+/* Force the Microsoft certificate into one normal grid cell, like every other card */
+#certifications .certification-grid > .certification-featured {
+  grid-column: auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  align-self: stretch !important;
+  padding: 12px 10px !important;
+  border: 0 !important;
+  border-radius: 13px !important;
+  background: #FEDC7B !important;
+  box-shadow: none !important;
+}
