@@ -2433,3 +2433,19 @@ main .section.skills .skill-list { display: flex !important; flex-wrap: wrap !im
 @media (max-width: 700px) {
   main .section.skills .skill-list > span { white-space: normal !important; font-size: .94rem !important; padding: 12px 16px !important; }
 }
+
+
+/* Slightly reduce skill sticker size and make only the icons coral red */
+main .section.skills .skill-list > span {
+  font-size: 1rem !important;
+  padding: 12px 19px !important;
+}
+main .section.skills .skill-list > span .skill-icon {
+  color: #DF6149 !important;
+}
+@media (max-width: 700px) {
+  main .section.skills .skill-list > span {
+    font-size: .9rem !important;
+    padding: 11px 15px !important;
+  }
+}
