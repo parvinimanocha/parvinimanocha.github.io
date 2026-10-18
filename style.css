@@ -1664,3 +1664,167 @@ nav a:focus-visible {
   .hero-image .circle-coral { width: 180px !important; height: 180px !important; right: -24px !important; top: 40% !important; }
   .hero-image .circle-lightgreen { width: 110px !important; height: 110px !important; left: -18px !important; bottom: -18px !important; }
 }
+
+
+/* Reference screenshot match: compact cream hero, red badge outlines, layered circles */
+body { background: #FFFBF0 !important; color: #153C2C !important; }
+.navbar {
+  padding: 10px 6.3% !important;
+  min-height: 42px !important;
+  background: #FFFBF0 !important;
+}
+.navbar .logo { font-size: 1.2rem !important; }
+.navbar .logo-sparkle { color: #DF6149 !important; }
+nav { gap: 2px !important; }
+nav a { font-size: .68rem !important; padding: 6px 10px !important; }
+.hero {
+  min-height: 0 !important;
+  padding: 28px 6.3% 38px !important;
+  gap: clamp(22px, 5vw, 62px) !important;
+  overflow: hidden !important;
+  align-items: center !important;
+  background:
+    radial-gradient(ellipse at 82% 22%, rgba(254,220,123,.34), transparent 36%),
+    linear-gradient(110deg, #FFFBF0 0%, #FFFBF0 58%, #FFF4D1 100%) !important;
+}
+.hero-text { flex: 1 1 58% !important; max-width: 56% !important; transform: none !important; }
+.hero .eyebrow {
+  color: #DF6149 !important;
+  font-size: .56rem !important;
+  letter-spacing: 1.5px !important;
+  margin-bottom: 8px !important;
+}
+.hero h1 {
+  font-size: clamp(1.65rem, 3.1vw, 2.25rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -1.2px !important;
+  margin-bottom: 14px !important;
+}
+.hero .hero-greeting { font-size: 1em !important; color: #708240 !important; }
+.hero .hero-name { font-size: 1.12em !important; color: #153C2C !important; }
+.hero .tagline {
+  font-size: clamp(.78rem, 1.35vw, 1rem) !important;
+  line-height: 1.35 !important;
+  color: #708240 !important;
+  margin-bottom: 10px !important;
+}
+.hero .intro {
+  max-width: 100% !important;
+  font-size: clamp(.58rem, .9vw, .72rem) !important;
+  line-height: 1.65 !important;
+  margin-bottom: 16px !important;
+  color: #34483c !important;
+}
+.hero .hero-actions { gap: 8px !important; margin-top: 0 !important; }
+.hero .hero-actions .button {
+  font-size: clamp(.55rem, .8vw, .68rem) !important;
+  padding: 9px 14px !important;
+  border-radius: 22px !important;
+}
+.hero .explore-button {
+  background: #FEDC7B !important;
+  color: #153C2C !important;
+  border: 0 !important;
+  box-shadow: 0 3px 0 #153C2C !important;
+}
+.hero .hello-button {
+  background: #FFFBF0 !important;
+  color: #153C2C !important;
+  border: 1.5px solid #153C2C !important;
+  box-shadow: none !important;
+}
+.hero .hello-button::first-letter { color: #DF6149 !important; }
+.hero .hero-stats { gap: 8px !important; margin-top: 16px !important; }
+.hero .stat-card,
+.hero .stat-card:first-child,
+.hero .stat-card:nth-child(2),
+.hero .stat-card:nth-child(3) {
+  min-width: 0 !important;
+  padding: 8px 11px !important;
+  border-radius: 11px !important;
+  background: #E3E9DC !important;
+  border: 1px solid #E3E9DC !important;
+}
+.hero .stat-card strong { font-size: clamp(.8rem, 1.35vw, 1rem) !important; color: #153C2C !important; }
+.hero .stat-card span { font-size: clamp(.45rem, .7vw, .58rem) !important; margin-top: 1px !important; color: #52663B !important; }
+.hero-image {
+  flex: 0 0 clamp(185px, 28vw, 250px) !important;
+  width: clamp(185px, 28vw, 250px) !important;
+  min-width: 0 !important;
+  position: relative !important;
+  isolation: isolate !important;
+  margin: 0 3px 0 0 !important;
+}
+.hero-image .profile-photo {
+  width: 100% !important;
+  height: clamp(245px, 36vw, 250px) !important;
+  object-fit: cover !important;
+  object-position: center 42% !important;
+  border: 5px solid #FEDC7B !important;
+  border-radius: 130px 130px 22px 22px !important;
+  background: #FFFBF0 !important;
+  box-shadow: 6px 6px 0 #153C2C !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+/* Backdrop circles: forest green behind upper-left, large yellow behind right, sage offset at bottom-left */
+.hero-image .circle-lightgreen {
+  display: block !important;
+  width: 115px !important;
+  height: 115px !important;
+  left: -25px !important;
+  bottom: -15px !important;
+  background: #E3E9DC !important;
+  z-index: -2 !important;
+}
+.hero-image .circle-yellow {
+  display: block !important;
+  width: 165px !important;
+  height: 165px !important;
+  top: -18px !important;
+  left: -22px !important;
+  background: #153C2C !important;
+  z-index: -2 !important;
+}
+.hero-image .circle-coral {
+  display: block !important;
+  width: 170px !important;
+  height: 170px !important;
+  top: 22% !important;
+  right: -20px !important;
+  background: #FEDC7B !important;
+  z-index: -3 !important;
+}
+/* Red outlines with forest-green offset shadows on the three floating badges */
+.hero-image .photo-badge {
+  position: absolute !important;
+  z-index: 3 !important;
+  background: #FFFBF0 !important;
+  color: #153C2C !important;
+  border: 2px solid #DF6149 !important;
+  border-radius: 18px !important;
+  padding: 5px 9px !important;
+  font-size: clamp(.48rem, .72vw, .62rem) !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  box-shadow: 0 3px 0 #153C2C !important;
+}
+.hero-image .badge-powerbi { top: 22% !important; left: -42px !important; }
+.hero-image .badge-seo { bottom: 10% !important; left: -30px !important; }
+.hero-image .badge-ppo { right: -28px !important; bottom: 29% !important; }
+@media (min-width: 1000px) {
+  .hero { padding-top: 28px !important; padding-bottom: 38px !important; }
+}
+@media (max-width: 700px) {
+  .navbar { padding: 10px 5% !important; }
+  nav { flex-wrap: wrap !important; justify-content: center !important; }
+  nav a { font-size: .65rem !important; padding: 5px 7px !important; }
+  .hero { flex-direction: column !important; text-align: left !important; padding: 26px 7% 34px !important; gap: 28px !important; }
+  .hero-text { max-width: 100% !important; width: 100% !important; }
+  .hero-image { width: min(230px, 78vw) !important; flex-basis: auto !important; align-self: center !important; }
+  .hero-image .profile-photo { height: 250px !important; }
+  .hero-image .badge-powerbi { left: -24px !important; }
+  .hero-image .badge-seo { left: -18px !important; }
+  .hero-image .badge-ppo { right: -18px !important; }
+  .hero .stat-card { padding: 8px 9px !important; }
+}
