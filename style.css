@@ -1500,3 +1500,31 @@ nav a:focus-visible {
   .hero { padding-top: 8px !important; padding-bottom: 42px !important; }
   .hero-text { transform: translateY(-8px); }
 }
+
+
+/* Slightly reduce hero typography without shifting the layout upward */
+.hero .hero-greeting { font-size: clamp(2.7rem, 3.5vw, 3.7rem) !important; }
+.hero .hero-name { font-size: clamp(3.3rem, 5.1vw, 4.5rem) !important; }
+.hero .tagline { font-size: clamp(1.25rem, 1.8vw, 1.55rem) !important; }
+.hero .intro { font-size: .98rem !important; line-height: 1.7 !important; }
+.hero .eyebrow { font-size: .88rem !important; }
+.hero .hero-actions .button { font-size: .96rem !important; padding: 15px 25px !important; }
+.hero .stat-card strong { font-size: 1.3rem !important; }
+.hero .stat-card span { font-size: .82rem !important; }
+/* Add a coral accent circle behind the portrait, visible at the upper-right edge */
+.hero-image .circle-coral {
+  background: #DF6149 !important;
+  width: 105px !important;
+  height: 105px !important;
+  top: 2% !important;
+  right: -18px !important;
+  z-index: -2 !important;
+}
+@media (max-width: 760px) {
+  .hero .hero-greeting { font-size: 2.25rem !important; }
+  .hero .hero-name { font-size: 2.85rem !important; }
+  .hero .tagline { font-size: 1.15rem !important; }
+  .hero .intro { font-size: .92rem !important; }
+  .hero .hero-actions .button { font-size: .9rem !important; padding: 12px 18px !important; }
+  .hero-image .circle-coral { width: 65px !important; height: 65px !important; top: 2% !important; right: -8px !important; }
+}
