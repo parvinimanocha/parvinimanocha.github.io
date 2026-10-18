@@ -2381,3 +2381,55 @@ main > .section.skills .skill-list { gap: 13px !important; }
 @media (max-width: 700px) {
   main > .section.skills .skill-list > span { padding: 12px 16px !important; font-size: .94rem !important; }
 }
+
+
+/* Final precise fix: style only each outer skill pill, not its inner icon/text spans */
+main .section.skills .skill-list > span {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  padding: 14px 21px !important;
+  margin: 0 !important;
+  border-radius: 999px !important;
+  font-size: 1.08rem !important;
+  line-height: 1.25 !important;
+  white-space: nowrap !important;
+}
+main .section.skills .skill-list > span .skill-icon,
+main .section.skills .skill-list > span .skill-name {
+  display: inline !important;
+  width: auto !important;
+  color: inherit !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+main .section.skills .skill-list-dark > span {
+  background: #153C2C !important;
+  color: #FFFBF0 !important;
+  border: 1px solid #153C2C !important;
+}
+main .section.skills .skill-list-yellow > span {
+  background: #FEDC7B !important;
+  color: #153C2C !important;
+  border: 1px solid #FEDC7B !important;
+}
+main .section.skills .skill-list-outline > span {
+  background: #FFFBF0 !important;
+  color: #153C2C !important;
+  border: 2px solid #708240 !important;
+}
+main .section.skills .skill-list { display: flex !important; flex-wrap: wrap !important; gap: 13px !important; }
+@media (max-width: 700px) {
+  main .section.skills .skill-list > span { white-space: normal !important; font-size: .94rem !important; padding: 12px 16px !important; }
+}
