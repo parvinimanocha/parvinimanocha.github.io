@@ -1131,3 +1131,75 @@ nav a:focus-visible {
   z-index: 1;
 }
 
+
+
+/* Hero action buttons, achievement cards and photo badges */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.hero .explore-button {
+  background: #FEDC7B !important;
+  color: #153c2c !important;
+  border: 2px solid #DF6149 !important;
+  box-shadow: 0 4px 0 rgba(223, 97, 73, .18);
+}
+.hero .hello-button {
+  background: #fffdf8 !important;
+  color: #153c2c !important;
+  border: 1.5px solid #153c2c !important;
+}
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.stat-card {
+  min-width: 94px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,.9);
+  border: 1px solid #e3e9dc;
+  border-radius: 13px;
+  line-height: 1.35;
+}
+.stat-card strong {
+  display: block;
+  color: #153c2c;
+  font-size: 1.1rem;
+}
+.stat-card span {
+  display: block;
+  margin-top: 4px;
+  color: #607466;
+  font-size: .72rem;
+}
+.hero-image {
+  position: relative;
+}
+.photo-badge {
+  position: absolute;
+  z-index: 2;
+  padding: 8px 12px;
+  background: #fffdf8;
+  color: #34483c;
+  border: 1px solid #edf0e8;
+  border-radius: 11px;
+  box-shadow: 0 8px 20px rgba(21,60,44,.12);
+  font-size: .72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.badge-powerbi { top: 14%; left: -38px; }
+.badge-seo { bottom: 13%; left: -24px; }
+.badge-ppo { right: -28px; bottom: 24%; }
+@media (max-width: 760px) {
+  .hero-stats { gap: 8px; }
+  .stat-card { min-width: 85px; padding: 9px; }
+  .photo-badge { font-size: .65rem; padding: 7px 9px; }
+  .badge-powerbi { left: -10px; }
+  .badge-seo { left: -10px; }
+  .badge-ppo { right: -8px; }
+}
