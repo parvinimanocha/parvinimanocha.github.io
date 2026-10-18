@@ -2205,3 +2205,15 @@ footer {
 main > .section.contact .contact-buttons .button {
   border: 1.5px solid #DF6149 !important;
 }
+
+
+/* Add a small decorative sparkle to every section heading */
+main > .section > h2::before {
+  content: "✦";
+  display: inline-block;
+  color: #DF6149;
+  font-size: .62em;
+  vertical-align: .28em;
+  margin-right: .45em;
+  text-shadow: 1px 1px 0 #FEDC7B;
+}
