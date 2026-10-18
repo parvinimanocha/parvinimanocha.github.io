@@ -2589,3 +2589,13 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
   box-shadow: 0 10px 0 #E5EADD !important;
 }
+
+
+/* Latest marked requests: red badges for Excel Basics and Microsoft Excel; red shadow for Digital Marketing */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4) .cert-logo,
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) .cert-logo {
+  background: #DF6149 !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) {
+  box-shadow: 0 10px 0 #DF6149 !important;
+}
