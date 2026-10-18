@@ -2575,3 +2575,17 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(4) {
   box-shadow: 0 10px 0 #153C2C !important;
 }
+
+
+/* Introduction to Data Analytics: dark-green IBM badge and light-green shadow */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) {
+  box-shadow: 0 10px 0 #E5EADD !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) .cert-logo {
+  background: #153C2C !important;
+}
+
+/* Microsoft Excel — Beginner to Advanced: light-green bottom shadow */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(6) {
+  box-shadow: 0 10px 0 #E5EADD !important;
+}
