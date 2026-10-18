@@ -1365,3 +1365,41 @@ nav a:focus-visible {
   .hero-image::before { width: 62px; height: 62px; left: 2%; top: 3%; }
   .hero-image::after { width: 54px; height: 54px; right: -2%; top: 37%; }
 }
+
+
+/* Explicit decorative circles at the three marked positions around the portrait */
+.hero-image { position: relative !important; isolation: isolate; }
+.hero-image .hero-circle {
+  display: block !important;
+  position: absolute !important;
+  border-radius: 50% !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+.hero-image .circle-lightgreen {
+  width: 78px !important;
+  height: 78px !important;
+  background: #E3E9DC !important;
+  left: -26px !important;
+  bottom: -16px !important;
+}
+.hero-image .circle-yellow {
+  width: 82px !important;
+  height: 82px !important;
+  background: #FEDC7B !important;
+  top: -26px !important;
+  left: 10px !important;
+}
+.hero-image .circle-coral {
+  width: 68px !important;
+  height: 68px !important;
+  background: #DF6149 !important;
+  top: 38% !important;
+  right: -30px !important;
+}
+.hero-image .profile-photo { position: relative !important; z-index: 0 !important; }
+@media (max-width: 760px) {
+  .hero-image .circle-lightgreen { width: 58px !important; height: 58px !important; left: -12px !important; bottom: -10px !important; }
+  .hero-image .circle-yellow { width: 58px !important; height: 58px !important; top: -12px !important; left: 8px !important; }
+  .hero-image .circle-coral { width: 50px !important; height: 50px !important; right: -12px !important; top: 38% !important; }
+}
