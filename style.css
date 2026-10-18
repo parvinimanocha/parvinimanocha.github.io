@@ -2599,3 +2599,12 @@ main .section.skills .skill-list > span .skill-icon {
 #certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(8) {
   box-shadow: 0 10px 0 #DF6149 !important;
 }
+
+
+/* Latest marked requests: yellow bottom shadows for cards 2 and 11 */
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(5) {
+  box-shadow: 0 10px 0 #FEDC7B !important;
+}
+#certifications.section .project-grid.certification-grid > .info-card.certification-card:nth-child(9) {
+  box-shadow: 0 10px 0 #FEDC7B !important;
+}
