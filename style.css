@@ -1828,3 +1828,45 @@ nav a { font-size: .68rem !important; padding: 6px 10px !important; }
   .hero-image .badge-ppo { right: -18px !important; }
   .hero .stat-card { padding: 8px 9px !important; }
 }
+
+
+/* Increase the overall hero content size to better match the requested scale */
+.hero {
+  padding-left: 5.5% !important;
+  padding-right: 5.5% !important;
+  gap: clamp(28px, 5vw, 76px) !important;
+}
+.hero-text { max-width: 58% !important; }
+.hero .eyebrow { font-size: .68rem !important; letter-spacing: 1.8px !important; }
+.hero h1 { font-size: clamp(2.1rem, 3.8vw, 3rem) !important; line-height: 1.04 !important; }
+.hero .hero-greeting { font-size: 1em !important; }
+.hero .hero-name { font-size: 1.12em !important; }
+.hero .tagline { font-size: clamp(1rem, 1.6vw, 1.3rem) !important; }
+.hero .intro { font-size: clamp(.78rem, 1.05vw, .94rem) !important; line-height: 1.7 !important; }
+.hero .hero-actions .button { font-size: .82rem !important; padding: 12px 18px !important; }
+.hero .hero-stats { gap: 10px !important; margin-top: 20px !important; }
+.hero .stat-card,
+.hero .stat-card:first-child,
+.hero .stat-card:nth-child(2),
+.hero .stat-card:nth-child(3) { padding: 11px 14px !important; border-radius: 13px !important; }
+.hero .stat-card strong { font-size: 1.12rem !important; }
+.hero .stat-card span { font-size: .68rem !important; }
+.hero-image {
+  flex-basis: clamp(230px, 30vw, 310px) !important;
+  width: clamp(230px, 30vw, 310px) !important;
+}
+.hero-image .profile-photo { height: clamp(280px, 37vw, 330px) !important; }
+.hero-image .badge-powerbi { left: -46px !important; }
+.hero-image .badge-ppo { right: -28px !important; }
+.hero-image .badge-seo { left: -32px !important; }
+@media (max-width: 700px) {
+  .hero { padding: 26px 7% 34px !important; }
+  .hero-text { max-width: 100% !important; }
+  .hero h1 { font-size: clamp(2rem, 8vw, 2.7rem) !important; }
+  .hero .eyebrow { font-size: .62rem !important; }
+  .hero .tagline { font-size: 1.05rem !important; }
+  .hero .intro { font-size: .82rem !important; }
+  .hero .hero-actions .button { font-size: .76rem !important; padding: 11px 15px !important; }
+  .hero-image { width: min(270px, 78vw) !important; flex-basis: auto !important; }
+  .hero-image .profile-photo { height: 285px !important; }
+}
