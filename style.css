@@ -1919,3 +1919,20 @@ nav a { font-size: .68rem !important; padding: 6px 10px !important; }
   .hero .stat-card strong { font-size: 1.2rem !important; }
   .hero .stat-card span { font-size: .75rem !important; }
 }
+
+
+/* Give the portrait a taller oval-rectangle arch */
+@media (min-width: 701px) {
+  .hero-image { flex-basis: clamp(300px, 29vw, 390px) !important; }
+  .hero-image .profile-photo {
+    height: clamp(410px, 56vh, 510px) !important;
+    border-radius: 170px 170px 28px 28px !important;
+    object-position: center 40% !important;
+  }
+}
+@media (max-width: 700px) {
+  .hero-image .profile-photo {
+    height: 330px !important;
+    border-radius: 140px 140px 24px 24px !important;
+  }
+}
