@@ -2327,3 +2327,57 @@ main > .section.skills .skill-list .skill-name { color: inherit !important; }
   main > .section.skills > h2 { font-size: clamp(2rem, 8vw, 3rem) !important; }
   main > .section.skills .skill-list > span { padding: 12px 16px !important; font-size: .9rem !important; }
 }
+
+
+/* Match the supplied Skills sticker reference: clean, large pills with grouped colors */
+main > .section.skills .skill-list > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: auto !important;
+  padding: 15px 22px !important;
+  border-radius: 999px !important;
+  font-size: 1.08rem !important;
+  font-weight: 650 !important;
+  line-height: 1.25 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+main > .section.skills .skill-list > span .skill-icon,
+main > .section.skills .skill-list > span .skill-name {
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+main > .section.skills .skill-list-dark > span {
+  background: #153C2C !important;
+  color: #FFFBF0 !important;
+  border: 1px solid #153C2C !important;
+}
+main > .section.skills .skill-list-yellow > span {
+  background: #FEDC7B !important;
+  color: #153C2C !important;
+  border: 1px solid #FEDC7B !important;
+}
+main > .section.skills .skill-list-outline > span {
+  background: #FFFBF0 !important;
+  color: #153C2C !important;
+  border: 2px solid #708240 !important;
+}
+/* Keep icons legible against each pill, matching the reference image */
+main > .section.skills .skill-list > span .skill-icon {
+  color: inherit !important;
+}
+main > .section.skills .skill-group { margin-bottom: 30px !important; }
+main > .section.skills .skill-group h3 { font-size: 1.18rem !important; margin-bottom: 17px !important; }
+main > .section.skills .skill-list { gap: 13px !important; }
+@media (max-width: 700px) {
+  main > .section.skills .skill-list > span { padding: 12px 16px !important; font-size: .94rem !important; }
+}
