@@ -3002,3 +3002,9 @@ main > .section.about-section .about-tiles > .about-tile:nth-child(4) .about-ico
 #projects.projects-section .project-grid {
   row-gap: 30px;
 }
+
+
+/* Slightly enlarge job/education titles in the Experience timeline */
+main > .section.experience-section .timeline-card h3 {
+  font-size: 1.4rem !important;
+}
