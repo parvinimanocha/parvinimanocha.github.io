@@ -2932,3 +2932,9 @@ main > .section.about-section::after {
 main > .section.about-section {
   background: var(--sage) !important;
 }
+
+
+/* Remove the colored background from the Curious Mind / About section */
+main > .section.about-section {
+  background: transparent !important;
+}
