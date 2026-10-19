@@ -3008,3 +3008,10 @@ main > .section.about-section .about-tiles > .about-tile:nth-child(4) .about-ico
 main > .section.experience-section .timeline-card h3 {
   font-size: 1.4rem !important;
 }
+
+
+/* Increase the hero statistic labels and values slightly */
+.hero-stats .stat-card strong,
+.hero-stats .stat-card span {
+  font-size: 1.08em !important;
+}
