@@ -2938,3 +2938,9 @@ main > .section.about-section {
 main > .section.about-section {
   background: transparent !important;
 }
+
+
+/* Dark-green shadows for the four Curious Mind feature boxes */
+main > .section.about-section .about-tile {
+  box-shadow: 0 8px 0 #153C2C !important;
+}
