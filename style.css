@@ -2796,3 +2796,11 @@ main .section.skills .skill-list > span .skill-icon {
     height: 60px !important;
   }
 }
+
+
+/* Match the Projects heading size to the Certifications heading */
+#projects.projects-section > h2 {
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 24px !important;
+}
