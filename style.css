@@ -181,7 +181,8 @@ h2::after { display: block; width: 62px; height: 5px; margin-top: 18px; border-r
    CONTACT
    ========================================================= */
 .contact { background: var(--cream); }
-.contact > p:not(.eyebrow) { max-width: 760px; color: var(--ink); }
+.contact-card { padding: clamp(24px, 5vw, 52px); border-radius: var(--radius); background: var(--sage); }
+.contact-card > p:not(.eyebrow) { max-width: 760px; color: var(--ink); }
 .contact-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
 
 /* =========================================================
