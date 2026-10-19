@@ -2706,3 +2706,16 @@ main .section.skills .skill-list > span .skill-icon {
 #projects.projects-section .project-card .project-link { display: inline-flex !important; align-items: center !important; gap: 5px !important; margin-top: 13px !important; padding-bottom: 3px !important; border-bottom: 2px solid var(--yellow) !important; color: var(--ink) !important; font-weight: 800 !important; text-decoration: none !important; }
 @media (max-width: 900px) { #projects.projects-section .project-grid.g3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
 @media (max-width: 600px) { #projects.projects-section { padding: 28px 16px !important; } #projects.projects-section .project-grid.g2, #projects.projects-section .project-grid.g3 { grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; } #projects.projects-section .project-category { font-size: 1rem !important; } }
+
+
+/* Projects section: match the Certifications section alignment and remove the green panel background */
+#projects.projects-section {
+  background: transparent !important;
+  padding: clamp(58px, 7vw, 100px) var(--page-gutter) !important;
+  border-radius: 0 !important;
+}
+@media (max-width: 600px) {
+  #projects.projects-section {
+    padding: 52px var(--page-gutter) !important;
+  }
+}
