@@ -2897,3 +2897,14 @@ main > .section > .eyebrow {
   line-height: 1.4;
   letter-spacing: 1.8px;
 }
+
+
+/* Make every coral-red eyebrow/label on the page consistent with the hero label */
+.eyebrow,
+.home-copy .eyebrow,
+.hero .eyebrow,
+main > .section > .eyebrow {
+  font-size: .88rem !important;
+  line-height: 1.4;
+  letter-spacing: 1.8px;
+}
