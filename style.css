@@ -205,6 +205,7 @@ footer { padding: 26px 24px; background: var(--ink); color: var(--cream); font-s
   .about-section .about-layout { gap: 28px; }
   .about-tile { padding: 16px; }
   .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-grid.g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
   :root { --section-space: 64px; }
