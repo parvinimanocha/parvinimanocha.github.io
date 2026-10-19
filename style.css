@@ -3031,3 +3031,9 @@ main > .section.experience-section .timeline-card h3 {
   font-weight: 800;
   line-height: 1.3;
 }
+
+
+/* Slightly enlarge the coral/red project labels */
+#projects .project-tag {
+  font-size: 14px !important;
+}
