@@ -3072,3 +3072,8 @@ main > .section.experience-section .timeline-card h3 {
   letter-spacing: normal !important;
   text-transform: none !important;
 }
+
+/* Keep project category names the same size as certification titles */
+#projects.projects-section .project-category > span:not(.project-category-icon) {
+  font-size: .82rem !important;
+}
