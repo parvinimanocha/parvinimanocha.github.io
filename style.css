@@ -2915,3 +2915,14 @@ main > .section.projects-section,
 main > .section.skills-section {
   background: var(--cream) !important;
 }
+
+
+/* Curious Mind / About section: replace green background with the yellow-red Let's Connect palette and remove decorative circle */
+main > .section.about-section {
+  background: var(--yellow) !important;
+}
+main > .section.about-section::before,
+main > .section.about-section::after {
+  content: none !important;
+  display: none !important;
+}
