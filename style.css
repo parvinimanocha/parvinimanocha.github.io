@@ -2853,3 +2853,26 @@ main .section.skills .skill-list > span .skill-icon {
   #projects.projects-section .project-grid.g2,
   #projects.projects-section .project-grid.g3 { grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; }
 }
+
+
+/* Match project-card text sizes to the compact typography used in Certifications */
+#projects.projects-section .project-tag {
+  font-size: .62rem !important;
+  line-height: 1.2 !important;
+  padding: 3px 7px !important;
+  margin-bottom: 6px !important;
+}
+#projects.projects-section .project-card h3 {
+  font-size: .82rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 4px !important;
+}
+#projects.projects-section .project-card p {
+  font-size: .72rem !important;
+  line-height: 1.3 !important;
+}
+#projects.projects-section .project-card .project-link {
+  font-size: .72rem !important;
+  line-height: 1.25 !important;
+  margin-top: 7px !important;
+}
