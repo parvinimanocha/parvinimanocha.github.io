@@ -3055,16 +3055,14 @@ main > .section.experience-section .timeline-card h3 {
 }
 
 
-/* Match project category headings to the Microsoft certification title typography */
-#projects .project-category {
+/* Match project category heading text to certification title typography */
+#projects.projects-section .project-category {
   color: #153C2C !important;
+  font-family: inherit !important;
   font-size: 0.82rem !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
 }
-
-
-/* Exact title styling: project group names match the featured Microsoft certification name */
 #projects.projects-section .project-category > span:not(.project-category-icon) {
   color: #153C2C !important;
   font-family: inherit !important;
