@@ -3015,3 +3015,19 @@ main > .section.experience-section .timeline-card h3 {
 .hero-stats .stat-card span {
   font-size: 1.08em !important;
 }
+
+
+/* Keep project names and project-category headings consistent with certification titles */
+#projects .project-content h3 {
+  margin: 0 0 8px;
+  color: #153C2C;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+#projects .project-category {
+  color: #153C2C;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
