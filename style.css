@@ -2876,3 +2876,79 @@ main .section.skills .skill-list > span .skill-icon {
   line-height: 1.25 !important;
   margin-top: 7px !important;
 }
+
+
+/* Refined Projects layout: consistent card widths, balanced visuals, readable text */
+#projects.projects-section .project-grid,
+#projects.projects-section .project-grid.g2,
+#projects.projects-section .project-grid.g3 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 22px !important;
+}
+#projects.projects-section .project-card {
+  min-width: 0 !important;
+  height: 100% !important;
+  padding: 0 0 18px !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+  background: var(--cream) !important;
+  box-shadow: 4px 5px 0 var(--ink) !important;
+}
+#projects.projects-section .project-visual {
+  height: 150px !important;
+  margin: 12px 12px 0 !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#projects.projects-section .project-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+#projects.projects-section .project-content {
+  padding: 14px 18px 0 !important;
+  text-align: left !important;
+}
+#projects.projects-section .project-tag {
+  display: inline-block !important;
+  max-width: 100% !important;
+  margin: 0 0 8px !important;
+  font-size: .68rem !important;
+  line-height: 1.3 !important;
+  padding: 4px 8px !important;
+}
+#projects.projects-section .project-card h3 {
+  font-size: .98rem !important;
+  line-height: 1.35 !important;
+  margin: 0 0 7px !important;
+  overflow-wrap: anywhere !important;
+}
+#projects.projects-section .project-card p {
+  font-size: .82rem !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+#projects.projects-section .project-card .project-link {
+  display: inline-block !important;
+  font-size: .82rem !important;
+  line-height: 1.35 !important;
+  margin-top: 10px !important;
+}
+#projects.projects-section .project-line-icon {
+  width: 48px !important;
+  height: 48px !important;
+}
+@media (max-width: 700px) {
+  #projects.projects-section .project-grid,
+  #projects.projects-section .project-grid.g2,
+  #projects.projects-section .project-grid.g3 {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+  #projects.projects-section .project-visual { height: 140px !important; }
+  #projects.projects-section .project-content { padding: 13px 16px 0 !important; }
+}
