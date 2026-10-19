@@ -2926,3 +2926,9 @@ main > .section.about-section::after {
   content: none !important;
   display: none !important;
 }
+
+
+/* Restore the About / Curious Mind section to the original sage-green background */
+main > .section.about-section {
+  background: var(--sage) !important;
+}
