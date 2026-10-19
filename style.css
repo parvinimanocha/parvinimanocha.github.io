@@ -2992,3 +2992,13 @@ main > .section.about-section .about-tiles > .about-tile:nth-child(4) .about-ico
   background: #FEDC7B !important;
   color: #153C2C !important;
 }
+
+
+/* Slightly enlarge every project card */
+#projects.projects-section .project-card {
+  transform: scale(1.04);
+  transform-origin: center;
+}
+#projects.projects-section .project-grid {
+  row-gap: 30px;
+}
