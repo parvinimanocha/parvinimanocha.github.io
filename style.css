@@ -3053,3 +3053,12 @@ main > .section.experience-section .timeline-card h3 {
 #projects .project-category::after {
   background: #E5EADD !important;
 }
+
+
+/* Match project category headings to the Microsoft certification title typography */
+#projects .project-category {
+  color: #153C2C !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
