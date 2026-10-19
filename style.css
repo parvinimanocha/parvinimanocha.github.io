@@ -2908,3 +2908,10 @@ main > .section > .eyebrow {
   line-height: 1.4;
   letter-spacing: 1.8px;
 }
+
+
+/* Remove the sage-green section background from Projects and Skills */
+main > .section.projects-section,
+main > .section.skills-section {
+  background: var(--cream) !important;
+}
