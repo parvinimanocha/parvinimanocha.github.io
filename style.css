@@ -3119,3 +3119,17 @@ main > .section.experience-section .timeline-card h3 {
     font-size: 1.55rem !important;
   }
 }
+
+
+/* Final correction: make project titles the same size as certification titles */
+#projects.projects-section .project-card h3 {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.22 !important;
+  letter-spacing: normal !important;
+}
+@media (max-width: 600px) {
+  #projects.projects-section .project-card h3 {
+    font-size: 1.25rem !important;
+  }
+}
