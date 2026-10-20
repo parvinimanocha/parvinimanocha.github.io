@@ -139,7 +139,7 @@ h2::after { display: block; width: 62px; height: 5px; margin-top: 18px; border-r
 .project-line-icon { width: 62px; height: 62px; fill: none; stroke: var(--olive); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .project-content { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 20px; }
 .project-tag { display: inline-block; margin-bottom: 12px; padding: 4px 9px; border-radius: 6px; background: var(--yellow); color: var(--ink); font-size: 12px; font-weight: 800; line-height: 1.35; }
-.project-content h3 { margin-bottom: 10px; color: var(--ink); font-size: 20px; }
+.project-content h3 { margin-bottom: 10px; color: var(--ink); font-size: 30px; font-weight: 800; line-height: 1.2; }
 .project-content p { margin-bottom: 16px; color: var(--ink); font-size: 15px; line-height: 1.6; }
 .project-content .project-link { margin-top: auto; }
 .project-marketing .project-visual { background: var(--sage); }
