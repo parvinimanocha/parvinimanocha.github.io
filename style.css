@@ -3095,3 +3095,9 @@ main > .section.experience-section .timeline-card h3 {
     font-size: 1.55rem !important;
   }
 }
+
+
+/* Keep project names regular-weight rather than bold */
+#projects.projects-section .project-card h3 {
+  font-weight: 400 !important;
+}
