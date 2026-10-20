@@ -3077,3 +3077,21 @@ main > .section.experience-section .timeline-card h3 {
 #projects.projects-section .project-category > span:not(.project-category-icon) {
   font-size: .82rem !important;
 }
+
+
+/* Match every project title to the bold, dark-green certification title style */
+#projects.projects-section .project-card h3 {
+  font-family: inherit !important;
+  font-size: clamp(1.45rem, 2.2vw, 1.9rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.22 !important;
+  letter-spacing: -0.025em !important;
+  color: #153C2C !important;
+  margin: 0 0 10px !important;
+}
+
+@media (max-width: 600px) {
+  #projects.projects-section .project-card h3 {
+    font-size: 1.55rem !important;
+  }
+}
